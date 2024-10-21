@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './amor e ponto r.png';
 import './App.css';
 
 function App() {
@@ -6,16 +6,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <br></br>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Em breve uma página do seu jeito
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.instagram.com/amorepontobyangeldias?utm_source=qr&igsh=MXA0YTVoMjhycmQ2Nw=="
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Clique aqui e saiba mais
         </a>
       </header>
     </div>
