@@ -1,25 +1,52 @@
-.NavBar{
-
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   width: 100%;
-   background: linear-gradient(to right, #e4b7a0, #d88a8a);
-
-}
-.NavBar, Nav, Ul{
-    list-style: none;
+.NavBar {
     display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(to right, #e4b7a0, #d88a8a);
+ }
+ 
+ .NavBar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+ }
+ 
+ .NavBar h1 {
+     margin: 0;
+     font-size: 24px;
+     color: rgb(201, 101, 101);
+ }
+ 
+ .NavBar nav ul {
+     list-style: none;
+     display: flex;
+     gap: 20px;
+     padding: 0;
+     margin: 0 auto; 
+     margin-right: -50px;
+ }
+ 
+ .NavBar nav ul li a {
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+ }
+ 
+ .cart-icon {
+     display: flex;
+     align-items: center;
+     margin-left: auto;
+     margin-right: 30px;
+     cursor:pointer;
+ }
+ .cart-icon, h5 {
+    gap:5px;
 }
 
-.NavBar nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
+
 
     
