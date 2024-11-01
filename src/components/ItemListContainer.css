@@ -1,5 +1,6 @@
 .ItemListContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 80vh;
@@ -7,3 +8,8 @@
   padding: 20px;
   margin-top: 40px;
 }
+
+.ItemListContainer h2 {
+  margin-bottom: 20px; 
+}
+
