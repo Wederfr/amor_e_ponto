@@ -8,7 +8,7 @@ const ItemListContainer = ({ greeting }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Simula uma chamada de rede com 2 segundos de atraso
+        
         const fetchItems = new Promise((resolve) => {
             setTimeout(() => {
                 resolve([
