@@ -5,6 +5,7 @@
     justify-content: center;
     width: 100%;
     background: linear-gradient(to right, #e4b7a0, #d88a8a);
+    overflow: hidden;
  }
  
  .NavBar nav {
