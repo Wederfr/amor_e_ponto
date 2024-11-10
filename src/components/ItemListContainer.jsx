@@ -14,7 +14,7 @@ const ItemListContainer = ({ greeting }) => {
                     { id: 2, title: 'Personalizado', price: 150, pictureUrl: 'https://raw.githubusercontent.com/Wederfr/amor_e_ponto/refs/heads/master/personalizado.jpg' },
                     { id: 3, title: 'Porta maternidade', price: 200, pictureUrl: 'https://raw.githubusercontent.com/Wederfr/amor_e_ponto/refs/heads/master/porta%20maternidade.jpeg' },
                     { id: 4, title: 'Porta alianças', price: 120, pictureUrl: 'https://raw.githubusercontent.com/Wederfr/amor_e_ponto/refs/heads/master/porta%20alian%C3%A7a.jpg' },
-                    
+
                 ]);
             }, 2000);
         });

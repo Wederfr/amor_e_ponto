@@ -6,23 +6,23 @@
   height: 80vh;
   text-align: center;
   padding: 20px;
-  margin-top:-30px;
+  margin-top: -30px;
 }
 
 .ItemListContainer h2 {
   margin-bottom: 20px;
 }
 
-/* Estilo para o contêiner de itens */
+
 .item-list {
   display: flex;
-  gap: 20px; /* Espaçamento entre os itens */
-  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha, se necessário */
-  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 20px;
 }
 
-/* Estilo individual de cada item */
+
 .item {
   display: flex;
   flex-direction: column;
@@ -30,6 +30,6 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  width: 150px; /* Define uma largura fixa para cada item */
+  width: 150px;
   text-align: center;
 }

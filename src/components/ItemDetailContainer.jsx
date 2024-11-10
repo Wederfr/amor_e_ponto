@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
 
 const ItemDetailContainer = () => {
-    const { id } = useParams(); // Pegando o id do item da URL
+    const { id } = useParams();
     const [item, setItem] = useState(null);
     const [loading, setLoading] = useState(true);
 

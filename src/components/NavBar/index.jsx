@@ -10,9 +10,9 @@ function NavBar() {
 
       <nav>
         <ul>
-          <li><Link to="/">INÍCIO</Link></li> {/* Link para a home */}
-          <li><Link to="/sobre-nos">SOBRE NÓS</Link></li> {/* Link para Sobre Nós */}
-          <li><Link to="/contato">CONTATOS</Link></li> {/* Link para a página de contatos */}
+          <li><Link to="/">INÍCIO</Link></li> { }
+          <li><Link to="/sobre-nos">SOBRE NÓS</Link></li> { }
+          <li><Link to="/contato">CONTATOS</Link></li> { }
         </ul>
         <div className="cart-icon">
           <CartWidget />
