@@ -1,7 +1,7 @@
 
+import { Link } from 'react-router-dom';
 import CartWidget from '../CartWidget';
 import './style.css';
-
 
 function NavBar() {
   return (
@@ -10,21 +10,17 @@ function NavBar() {
 
       <nav>
         <ul>
-          <li><a href="http://google.com">INÍCIO</a></li>
-          <li><a href="http://google.com">PRODUTOS</a></li>
-          <li><a href="http://google.com">CONTATOS</a></li>
+          <li><Link to="/">INÍCIO</Link></li> {/* Link para a home */}
+          <li><Link to="/sobre-nos">SOBRE NÓS</Link></li> {/* Link para Sobre Nós */}
+          <li><Link to="/contato">CONTATOS</Link></li> {/* Link para a página de contatos */}
         </ul>
         <div className="cart-icon">
-
-        <CartWidget />
-        <h5>3</h5>
-
-      </div>
+          <CartWidget />
+          <h5>3</h5>
+        </div>
       </nav>
-      
     </div>
   );
 }
-
 
 export default NavBar;

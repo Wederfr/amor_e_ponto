@@ -1,0 +1,11 @@
+.SobreNos {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+  }
+  
+  .SobreNos img {
+    max-width: 100%;  
+    height: auto; 
+  }
