@@ -15,7 +15,7 @@ const ItemDetailContainer = () => {
     ];
 
     useEffect(() => {
-        // Simulando a busca do item com base no id
+
         const foundItem = products.find((product) => product.id === parseInt(id));
 
         setItem(foundItem);

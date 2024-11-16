@@ -20,7 +20,7 @@
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
+    background-color: #e4b7a0;
     color: white;
     transition: background-color 0.3s ease;
 }
@@ -42,7 +42,7 @@
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #e4b7a0;
+    background-color: #ddc0b1;
     color: white;
     transition: background-color 0.3s ease;
 }

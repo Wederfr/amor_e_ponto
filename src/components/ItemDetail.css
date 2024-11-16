@@ -49,3 +49,18 @@
 .item-detail__button:hover {
     background-color: #0056b3;
 }
+
+.finalize-button {
+
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddc0b1;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+    margin-left: 120px;
+
+}
