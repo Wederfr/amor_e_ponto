@@ -1,15 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ItemListContainer from '../components/ItemListContainer';
-import ItemDetailContainer from '../components/ItemDetailContainer';
-import App from '../App';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+// component
+import NavBar from '../components/NavBar';
+// pages 
+import ItemListContainer from '../pages/ItemListContainer';
+import ItemDetailContainer from '../pages/ItemDetailContainer';
+import Contatos from '../pages/Contatos';
+import SobreNos from '../pages/SobreNos';
 
-const AppRouter = () => {
+const Router = () => {
     return (
-        <Router>
-            <App /> { }
-        </Router>
+        <BrowserRouter>
+            <NavBar />
+            <Routes>
+                <Route path="/" exact element={<ItemListContainer greeting="Bem-vindo à loja!" />} />
+                <Route path="/item/:id" exact element={<ItemDetailContainer />} />
+                <Route path="/sobre-nos" exact element={<SobreNos />} />
+                <Route path="/contatos" exact element={<Contatos />} />
+            </Routes>
+        </BrowserRouter>
     );
 };
 
-export default AppRouter;
+export default Router;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import ItemDetail from './ItemDetail';
+import ItemDetail from '../../components/ItemDetail';
 
 const ItemDetailContainer = () => {
     const { id } = useParams();
@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
 
     return (
         <div className="item-detail-container">
-            {loading ? <p>Carregando detalhes...</p> : item && <ItemDetail {...item} />}
+            {loading ? <p>Carregando detalhes...</p> : item && <ItemDetail item={ item } />}
         </div>
     );
 };
