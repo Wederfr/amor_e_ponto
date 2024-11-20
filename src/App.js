@@ -5,11 +5,7 @@ import CartProvider from './context/CartContext';
 function App() {
   return (
     <div className="App">
-      
-      <CartProvider>
-        <Router />
-      </CartProvider>
-
+      <Router />
     </div>
   );
 }

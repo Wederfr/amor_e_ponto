@@ -7,9 +7,11 @@ import ItemListContainer from '../pages/ItemListContainer';
 import ItemDetailContainer from '../pages/ItemDetailContainer';
 import Contatos from '../pages/Contatos';
 import SobreNos from '../pages/SobreNos';
+import CartProvider from '../context/CartContext';
 
 const Router = () => {
     return (
+        <CartProvider>
         <BrowserRouter>
             <NavBar />
             <Routes>
@@ -19,6 +21,7 @@ const Router = () => {
                 <Route path="/contatos" exact element={<Contatos />} />
             </Routes>
         </BrowserRouter>
+        </CartProvider>
     );
 };
 
