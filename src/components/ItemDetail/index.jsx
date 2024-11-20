@@ -5,16 +5,12 @@ import './style.css';
 import { useCart } from '../../context/CartContext';
 
 const ItemDetail = ({ item }) => {
-    const { addCart } = useCart();
+    const { addItem } = useCart(); // Ajustado para usar addItem
     const [quantity, setQuantity] = useState(0);
     const navigate = useNavigate();
 
     const handleAddToCart = (qtd) => {
-        addCart({
-            ...item, 
-            qtd
-        });
-
+        addItem(item, qtd); // Usando addItem para adicionar ao contexto
         setQuantity(qtd);
     };
 
@@ -30,11 +26,9 @@ const ItemDetail = ({ item }) => {
                 <p>{item.description}</p>
                 <p>Preço: R${item.price}</p>
 
-                { }
                 {quantity === 0 ? (
                     <ItemCount stock={10} initial={1} onAdd={handleAddToCart} />
                 ) : (
-
                     <button className="finalize-button" onClick={handleFinalizePurchase}>
                         Finalizar Compra
                     </button>
