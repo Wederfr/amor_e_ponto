@@ -19,9 +19,9 @@ export const CartProvider = ({ children }) => {
 
   // Função para obter o preço total do carrinho
   const totalPrice = () => {
+    console.log("Calculando total:", cartItems);
     return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
   };
-
   // Função para adicionar um item ao carrinho
   const addItem = (item) => {
     setCartItems((prevItems) => {
