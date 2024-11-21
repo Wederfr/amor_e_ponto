@@ -12,14 +12,14 @@ const Cart = () => {
 
   return (
     <div className="cart-page">
-      <h1>Carrinho de Compras</h1>
+      <h1>SUAS COMPRAS</h1>
 
       {/* Verificando se há itens no carrinho */}
       {cartItems.length === 0 ? (
-        <p>O carrinho está vazio.</p>
+        <p className="empty-cart-message">O carrinho está vazio. Adicione alguns itens!</p>
       ) : (
         <div>
-          <ul>
+          <ul className="cart-items-list">
             {cartItems.map((item) => (
               <li key={item.id} className="cart-item">
                 <img src={item.pictureUrl} alt={item.name} className="cart-item__image" />
@@ -27,7 +27,7 @@ const Cart = () => {
                   <h3>{item.name}</h3>
                   <p>Preço: R${item.price.toFixed(2)}</p>
                   <p>Quantidade: {item.quantity}</p>
-                  <button onClick={() => removeItem(item.id)}>Remover</button>
+                  <button className="remove-button" onClick={() => removeItem(item.id)}>Remover</button>
                 </div>
               </li>
             ))}
@@ -37,10 +37,12 @@ const Cart = () => {
             <p>Total de itens: {cartSize()}</p>
             {/* Verificando se totalPrice não é NaN */}
             <p><strong>Total: R${totalPrice().toFixed(2) || 0}</strong></p>
-            <button onClick={clear}>Limpar Carrinho</button>
-            <button onClick={() => alert('Finalizar compra')} className="checkout-button">
-              Finalizar Compra
-            </button>
+            <div className="cart-actions">
+              <button className="clear-button" onClick={clear}>Limpar Carrinho</button>
+              <button onClick={() => alert('Finalizar compra')} className="checkout-button">
+                Finalizar Compra
+              </button>
+            </div>
           </div>
         </div>
       )}

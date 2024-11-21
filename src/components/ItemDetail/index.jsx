@@ -10,9 +10,10 @@ const ItemDetail = ({ item }) => {
     const navigate = useNavigate();
 
     const handleAddToCart = (qtd) => {
-        addItem(item, qtd); // Usando addItem para adicionar ao contexto
-        setQuantity(qtd);
+        addItem(item, qtd); // Passando a quantidade para o addItem
+        setQuantity(qtd);  // Atualiza a quantidade local para refletir no botão
     };
+    
 
     const handleFinalizePurchase = () => {
         navigate('/Cart');

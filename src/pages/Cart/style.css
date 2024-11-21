@@ -1,13 +1,6 @@
 
 /* Estilos do carrinho (Cart.css) */
-.cart-page {
-    padding: 20px;
-}
 
-.cart-items-list {
-    list-style-type: none;
-    padding: 0;
-}
 
 .cart-item {
     display: flex;
@@ -17,13 +10,22 @@
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 15px;
+    position: relative; /* Adicionando posição relativa para o alinhamento do botão Remover */
 }
 
-.cart-item__image {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 5px;
+.cart-page {
+    padding: 20px;
+}
+
+.cart-page h1 {
+    text-align: center; /* Centraliza o h1 */
+}
+
+.empty-cart-message {
+    text-align: center; /* Centraliza a mensagem do carrinho vazio */
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 20px;
 }
 
 .cart-item__details {
@@ -31,38 +33,50 @@
     margin-left: 20px;
 }
 
-.cart-item__details h3 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
+.cart-items-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto; /* Centraliza o contêiner */
+    max-width: 800px; /* Defina a largura máxima desejada */
 }
 
-.cart-item__details p {
-    margin: 5px 0;
+.cart-item__image {
+    width: 60px; /* Diminuindo o tamanho da imagem */
+    height: 60px; /* Diminuindo o tamanho da imagem */
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .remove-button {
+    position: absolute;
+    right: 10px; /* Alinha o botão Remover à direita do container */
+    top: 50px; /* Alinha verticalmente dentro do item */
     padding: 5px 10px;
-    background-color: #f44336;
+    background-color: #e53935; /* Cor em tom de rosa */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .remove-button:hover {
-    background-color: #e53935;
+    background-color: #d32f2f; /* Cor mais escura quando passar o mouse */
 }
 
 .cart-summary {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     margin-top: 20px;
+    gap: 50px;
+    
 }
 
 .cart-summary p {
     font-size: 1.4rem;
     font-weight: bold;
+    margin-left: 10;
 }
 
 .cart-actions {
@@ -72,7 +86,7 @@
 
 .cart-actions button {
     padding: 10px 20px;
-    background-color: #f7c92e;
+    background-color: #e53935; /* Botões em tons de rosa */
     border: none;
     color: white;
     border-radius: 5px;
@@ -81,15 +95,15 @@
 }
 
 .cart-actions button:hover {
-    background-color: #e0b324;
+    background-color: #d32f2f; /* Cor mais escura ao passar o mouse */
 }
 
 .clear-button {
-    background-color: #f44336;
+    background-color: #e53935; /* Cor de destaque rosa */
 }
 
 .clear-button:hover {
-    background-color: #e53935;
+    background-color: #d32f2f; /* Cor mais escura ao passar o mouse */
 }
 
 .checkout-button {
