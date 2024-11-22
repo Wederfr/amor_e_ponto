@@ -9,7 +9,9 @@ function NavBar() {
 
   return (
     <div className="NavBar">
+      <img className="logo-img" src="https://raw.githubusercontent.com/Wederfr/amor_e_ponto/refs/heads/master/logo%20amoreponto.png" alt="Logo Amor e Ponto" />
       <h1>AMOR E PONTO</h1>
+      
 
       <nav>
         <ul>
@@ -18,7 +20,9 @@ function NavBar() {
           <li><Link to="/contato">CONTATOS</Link></li>
         </ul>
         <div className="cart-icon">
+        <Link to="/cart">
           <CartWidget />
+          </Link>
           <h5>{cartSize()}</h5>  {/* Exibindo o tamanho do carrinho */}
         </div>
       </nav>

@@ -1,3 +1,13 @@
+.logo-img {
+    height: 110px; /* Ajuste a altura conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+    position: absolute; /* Posiciona a logo independentemente dos outros elementos */
+    top: 9%; /* Centraliza verticalmente */
+    left: 30px;
+    
+    transform: translateY(-50%); /* Ajuste fino para centralização */
+}
+
 .NavBar {
     display: flex;
     flex-direction: column;
@@ -7,6 +17,7 @@
     background: linear-gradient(to right, #e4b7a0, #d88a8a);
     overflow: hidden;
 }
+
 
 .NavBar nav {
     display: flex;
@@ -43,6 +54,12 @@
     margin-left: auto;
     margin-right: 30px;
     cursor: pointer;
+    
+}
+
+.cart-icon a {
+    color:black;
+    text-decoration: none; /* Remova qualquer sublinhado, se houver */
 }
 
 .cart-icon,

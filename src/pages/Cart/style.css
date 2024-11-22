@@ -2,6 +2,7 @@
 /* Estilos do carrinho (Cart.css) */
 
 
+
 .cart-item {
     display: flex;
     justify-content: space-between;
@@ -103,6 +104,24 @@
 }
 
 .clear-button:hover {
+    background-color: #d32f2f; /* Cor mais escura ao passar o mouse */
+}
+
+.store-button {
+    padding: 10px 20px;
+    background-color: #e53935; /* Cor em tons de rosa */
+    border: none;
+    color: white; /* Garante que o texto seja branco */
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: inherit;
+    display: inline-block; /* Garante o comportamento de botão */
+    text-align: center; /* Centraliza o texto */
+    transition: background-color 0.3s;
+}
+
+.store-button:hover {
     background-color: #d32f2f; /* Cor mais escura ao passar o mouse */
 }
 

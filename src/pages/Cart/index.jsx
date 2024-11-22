@@ -1,5 +1,6 @@
 import React from 'react';
 import { useCart } from '../../context/CartContext';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 const Cart = () => {
@@ -38,10 +39,13 @@ const Cart = () => {
             {/* Verificando se totalPrice não é NaN */}
             <p><strong>Total: R${totalPrice().toFixed(2) || 0}</strong></p>
             <div className="cart-actions">
+              
               <button className="clear-button" onClick={clear}>Limpar Carrinho</button>
               <button onClick={() => alert('Finalizar compra')} className="checkout-button">
                 Finalizar Compra
               </button>
+              <Link to="/" className='store-button'>Voltar à loja</Link>
+             
             </div>
           </div>
         </div>
