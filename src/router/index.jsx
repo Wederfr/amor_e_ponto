@@ -7,7 +7,7 @@ import ItemListContainer from '../pages/ItemListContainer';
 import ItemDetailContainer from '../pages/ItemDetailContainer';
 import Contatos from '../pages/Contatos';
 import SobreNos from '../pages/SobreNos';
-import Cart from '../pages/Cart'; // Importando a página do carrinho
+import Cart from '../pages/Cart';
 import CartProvider from '../context/CartContext';
 
 const Router = () => {
@@ -20,7 +20,7 @@ const Router = () => {
                     <Route path="/item/:id" exact element={<ItemDetailContainer />} />
                     <Route path="/sobre-nos" exact element={<SobreNos />} />
                     <Route path="/contatos" exact element={<Contatos />} />
-                    <Route path="/cart" exact element={<Cart />} /> {/* Nova rota para o carrinho */}
+                    <Route path="/cart" exact element={<Cart />} /> { }
                 </Routes>
             </BrowserRouter>
         </CartProvider>

@@ -1,8 +1,3 @@
-
-/* Estilos do carrinho (Cart.css) */
-
-
-
 .cart-item {
     display: flex;
     justify-content: space-between;
@@ -11,7 +6,7 @@
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 15px;
-    position: relative; /* Adicionando posição relativa para o alinhamento do botão Remover */
+    position: relative;
 }
 
 .cart-page {
@@ -19,41 +14,41 @@
 }
 
 .cart-page h1 {
-    text-align: center; /* Centraliza o h1 */
+    text-align: center;
 }
 
 .empty-cart-message {
-    text-align: center; /* Centraliza a mensagem do carrinho vazio */
+    text-align: center;
     font-size: 1.2rem;
     color: #333;
     margin-top: 20px;
 }
 
 .cart-item__details {
-    flex-grow: 1; /* Ocupa o restante do espaço disponível */
+    flex-grow: 1;
     margin-left: 20px;
 }
 
 .cart-items-list {
     list-style-type: none;
     padding: 0;
-    margin: 0 auto; /* Centraliza o contêiner */
-    max-width: 800px; /* Defina a largura máxima desejada */
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .cart-item__image {
-    width: 60px; /* Diminuindo o tamanho da imagem */
-    height: 60px; /* Diminuindo o tamanho da imagem */
+    width: 60px;
+    height: 60px;
     object-fit: cover;
     border-radius: 5px;
 }
 
 .remove-button {
     position: absolute;
-    right: 10px; /* Alinha o botão Remover à direita do container */
-    top: 50px; /* Alinha verticalmente dentro do item */
+    right: 10px;
+    top: 50px;
     padding: 5px 10px;
-    background-color: #e53935; /* Cor em tom de rosa */
+    background-color: #e53935;
     color: white;
     border: none;
     border-radius: 5px;
@@ -62,7 +57,7 @@
 }
 
 .remove-button:hover {
-    background-color: #d32f2f; /* Cor mais escura quando passar o mouse */
+    background-color: #d32f2f;
 }
 
 .cart-summary {
@@ -71,7 +66,7 @@
     justify-content: center;
     margin-top: 20px;
     gap: 50px;
-    
+
 }
 
 .cart-summary p {
@@ -87,7 +82,7 @@
 
 .cart-actions button {
     padding: 10px 20px;
-    background-color: #e53935; /* Botões em tons de rosa */
+    background-color: #e53935;
     border: none;
     color: white;
     border-radius: 5px;
@@ -96,33 +91,33 @@
 }
 
 .cart-actions button:hover {
-    background-color: #d32f2f; /* Cor mais escura ao passar o mouse */
+    background-color: #d32f2f;
 }
 
 .clear-button {
-    background-color: #e53935; /* Cor de destaque rosa */
+    background-color: #e53935;
 }
 
 .clear-button:hover {
-    background-color: #d32f2f; /* Cor mais escura ao passar o mouse */
+    background-color: #d32f2f;
 }
 
 .store-button {
     padding: 10px 20px;
-    background-color: #e53935; /* Cor em tons de rosa */
+    background-color: #e53935;
     border: none;
-    color: white; /* Garante que o texto seja branco */
+    color: white;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none; /* Remove o sublinhado */
+    text-decoration: none;
     font-family: inherit;
-    display: inline-block; /* Garante o comportamento de botão */
-    text-align: center; /* Centraliza o texto */
+    display: inline-block;
+    text-align: center;
     transition: background-color 0.3s;
 }
 
 .store-button:hover {
-    background-color: #d32f2f; /* Cor mais escura ao passar o mouse */
+    background-color: #d32f2f;
 }
 
 .checkout-button {

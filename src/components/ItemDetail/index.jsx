@@ -5,15 +5,15 @@ import './style.css';
 import { useCart } from '../../context/CartContext';
 
 const ItemDetail = ({ item }) => {
-    const { addItem } = useCart(); // Ajustado para usar addItem
+    const { addItem } = useCart();
     const [quantity, setQuantity] = useState(0);
     const navigate = useNavigate();
 
     const handleAddToCart = (qtd) => {
-        addItem(item, qtd); // Passando a quantidade para o addItem
-        setQuantity(qtd);  // Atualiza a quantidade local para refletir no botão
+        addItem(item, qtd);
+        setQuantity(qtd);
     };
-    
+
 
     const handleFinalizePurchase = () => {
         navigate('/Cart');

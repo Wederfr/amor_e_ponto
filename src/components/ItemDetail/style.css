@@ -20,18 +20,21 @@
 .item-detail__info {
     display: block;
     flex: 1;
+
 }
 
 .item-detail__info h2 {
     margin: 0 0 10px;
     font-size: 1.8rem;
     color: #333;
+
 }
 
 .item-detail__info p {
     margin: 8px 0;
     font-size: 1rem;
     color: #555;
+
 }
 
 .item-detail__button {
